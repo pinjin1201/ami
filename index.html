@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        <title>AMi's game</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <div class="btitle" id="btitle">你的專屬測驗</div>
+        <div class="text" id="text">測驗共20題，請選出一個正確的答案，全對者可獲得意想不到的美好獎勵 ( :</div>
+        <div class="main">
+            <!-- 第一題 -->
+            <div class="col">
+                <div class="incol oncol" id="col-1">
+                    <div class="title">1. 好友二馬（馮俞雯）讀台中高工哪一科 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrong(this);">冷凍科</div>
+                        <div class="w item" onclick="wrong(this);">機械科</div>
+                        <div class="r item" id="r-1" onclick="rightOne(this);">汽車科</div>
+                        <div class="w item" onclick="wrong(this);">電機科</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二題 -->
+            <div class="col">
+                <div class="incol e twcol" id="col-2">
+                    <div class="title">2. 我覺得虎尾哪間餐廳最有回憶 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongtw(this);">阿財火雞肉飯</div>
+                        <div class="r item" id="r-2" onclick="rightTwo(this);">大呼過癮</div>
+                        <div class="w item" onclick="wrongtw(this);">大口</div>
+                        <div class="w item" onclick="wrongtw(this);">歡樂牛排</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三題 -->
+            <div class="col">
+                <div class="incol e thcol" id="col-3">
+                    <div class="title">3. 我最喜歡你的哪個部位 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongth(this);">鼻子</div>
+                        <div class="r item" id="r-3" onclick="rightThree(this);">手</div>
+                        <div class="w item" onclick="wrongth(this);">胸</div>
+                        <div class="w item" onclick="wrongth(this);">臉</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第四題 -->
+            <div class="col">
+                <div class="incol e focol" id="col-4">
+                    <div class="title">4. 為什麼我之前會剪短頭髮 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongfo(this);">朋友約</div>
+                        <div class="r item" id="r-4" onclick="rightFour(this);">做夢</div>
+                        <div class="w item" onclick="wrongfo(this);">想換新髮型</div>
+                        <div class="w item" onclick="wrongfo(this);">有人說我短髮很好看</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第五題 -->
+            <div class="col">
+                <div class="incol e ficol" id="col-5">
+                    <div class="title ltitle">5. 亦如老公在哪裡工作 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongfi(this);">大立光</div>
+                        <div class="w item" onclick="wrongfi(this);">鴻海</div>
+                        <div class="r item" id="r-5" onclick="rightFive(this);">台積電</div>
+                        <div class="w item" onclick="wrongfi(this);">日月光</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e sicol" id="col-6">
+                    <div class="title ltitle">6. 我有幾隻戒指 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongsi(this);">5</div>
+                        <div class="r item" id="r-6" onclick="rightSix(this);">6</div>
+                        <div class="w item" onclick="wrongsi(this);">7</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e secol" id="col-7">
+                    <div class="title ltitle">7. 我沒有在哪裡打工過 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongse(this);">高中圖書館</div>
+                        <div class="w item" onclick="wrongse(this);">糕餅店</div>
+                        <div class="r item" id="r-7" onclick="rightSeven(this);">小吃店</div>
+                        <div class="w item" onclick="wrongse(this);">生管助理</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e eicol" id="col-8">
+                    <div class="title ltitle">8. 我沒有買過哪一牌的鞋子 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongei(this);">PUMA</div>
+                        <div class="r item" id="r-8" onclick="rightEight(this);">ASICS</div>
+                        <div class="w item" onclick="wrongei(this);">Nike</div>
+                        <div class="w item" onclick="wrongei(this);">Adidas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e nicol" id="col-9">
+                    <div class="title ltitle">9. 我最喜歡逛什麼店 ?</div>
+                    <div>
+                        <div class="r item" id="r-9" onclick="rightNine(this);">家飾</div>
+                        <div class="w item" onclick="wrongni(this);">衣服</div>
+                        <div class="w item" onclick="wrongni(this);">飾品</div>
+                        <div class="w item" onclick="wrongni(this);">化妝品</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e tencol" id="col-10">
+                    <div class="title ltitle">10. 心情不好會做什麼抒發 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongten(this);">看書</div>
+                        <div class="w item" onclick="wrongten(this);">購物</div>
+                        <div class="w item" onclick="wrongten(this);">吃美食</div>
+                        <div class="r item" id="r-10" onclick="rightTen(this);">去人少的地方走走</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e elecol" id="col-11">
+                    <div class="title ltitle">11. 我的夢想車是 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongele(this);">福特 Focus</div>
+                        <div class="w item" onclick="wrongele(this);">mini cooper</div>
+                        <div class="r item" id="r-11" onclick="rightEleven(this);">速霸陸 森林人</div>
+                        <div class="w item" onclick="wrongele(this);">discovery</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e twecol" id="col-12">
+                    <div class="title ltitle">12. 最喜歡什麼口味的冰淇淋 ?</div>
+                    <div>
+                        <div class="r item" id="r-12" onclick="rightTwelve(this);">巧克力</div>
+                        <div class="w item" onclick="wrongtwe(this);">草莓</div>
+                        <div class="w item" onclick="wrongtwe(this);">抹茶</div>
+                        <div class="w item" onclick="wrongtwe(this);">香草</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e thicol" id="col-13">
+                    <div class="title ltitle">13. 高中時最喜歡哪個國家 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongthi(this);">義大利</div>
+                        <div class="w item" onclick="wrongthi(this);">加拿大</div>
+                        <div class="w item" onclick="wrongthi(this);">德國</div>
+                        <div class="r item" id="r-13" onclick="rightThirteen(this);">英國</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e foucol" id="col-14">
+                    <div class="title ltitle">14. 我最喜歡什麼甜點 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongfou(this);">蛋糕</div>
+                        <div class="r item" id="r-14" onclick="rightFourteen(this);">冰淇淋</div>
+                        <div class="w item" onclick="wrongfou(this);">巧克力</div>
+                        <div class="w item" onclick="wrongfou(this);">麻糬</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e fifcol" id="col-15">
+                    <div class="title ltitle">15. 我的身高 ?</div>
+                    <div>
+                        <div class="r item" id="r-15" onclick="rightFifteen(this);">165cm</div>
+                        <div class="w item" onclick="wrongfif(this);">166cm</div>
+                        <div class="w item" onclick="wrongfif(this);">167cm</div>
+                        <div class="w item" onclick="wrongfif(this);">168cm</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e sixcol" id="col-16">
+                    <div class="title ltitle">16. 最喜歡吃什麼 ?</div>
+                    <div>
+                        <div class="r item" id="r-16" onclick="rightSixteen(this);">火鍋</div>
+                        <div class="w item" onclick="wrongsix(this);">拉麵</div>
+                        <div class="w item" onclick="wrongsix(this);">義大利麵</div>
+                        <div class="w item" onclick="wrongsix(this);">丼飯</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e sevecol" id="col-17">
+                    <div class="title ltitle">17. 比較喜歡吃什麼糕餅 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongsev(this);">蛋黃酥</div>
+                        <div class="w item" onclick="wrongsev(this);">牛舌餅</div>
+                        <div class="r item" id="r-17" onclick="rightSeventeen(this);">奶油酥餅</div>
+                        <div class="w item" onclick="wrongsev(this);">鳳梨酥</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e eigcol" id="col-18">
+                    <div class="title ltitle">18. 最討厭怎樣的男生 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongeig(this);">自以為</div>
+                        <div class="r item" id="r-18" onclick="rightEighteen(this);">斤斤計較</div>
+                        <div class="w item" onclick="wrongeig(this);">多話</div>
+                        <div class="w item" onclick="wrongeig(this);">心機</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e nincol" id="col-19">
+                    <div class="title ltitle">19. 最討厭什麼課 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongnin(this);">歷史課</div>
+                        <div class="w item" onclick="wrongnin(this);">數學課</div>
+                        <div class="w item" onclick="wrongnin(this);">理化課</div>
+                        <div class="r item" id="r-19" onclick="rightNinteen(this);">游泳課</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="incol e twecol" id="col-20">
+                    <div class="title ltitle">20. 最討厭什麼裝扮 ?</div>
+                    <div>
+                        <div class="w item" onclick="wrongtwen(this);">絲巾</div>
+                        <div class="r item" id="r-20" onclick="rightTwenty(this);">涼鞋</div>
+                        <div class="w item" onclick="wrongtwen(this);">帽T</div>
+                        <div class="w item" onclick="wrongtwen(this);">米其林外套</div>
+                    </div>
+                </div>
+            </div>
+        </div><!--
+        <div class="last" id="last-1">答對 : 1題</div>
+        <div class="last" id="last-2">答對 : 2題</div>
+        <div class="last" id="last-3">答對 : 3題</div>
+        <div class="last" id="last-4">答對 : 4題</div>
+        <div class="last" id="last-5">答對 : 5題</div>
+        <div class="last" id="last-6">答對 : 6題</div>
+        <div class="last" id="last-7">答對 : 7題</div>
+        <div class="last" id="last-8">答對 : 8題</div>
+        <div class="last" id="last-9">答對 : 9題</div>
+        <div class="last" id="last-10">答對 : 10題</div>
+        <div class="last" id="last-11">答對 : 11題</div>
+        <div class="last" id="last-12">答對 : 12題</div>
+        <div class="last" id="last-13">答對 : 13題</div>
+        <div class="last" id="last-14">答對 : 14題</div>
+        <div class="last" id="last-15">答對 : 15題</div>
+        <div class="last" id="last-16">答對 : 16題</div>
+        <div class="last" id="last-17">答對 : 17題</div>
+        <div class="last" id="last-18">答對 : 18題</div>
+        <div class="last" id="last-19">答對 : 19題</div>
+        <div class="last" id="last">答對 : 20題</div>  -->
+        <div class="last" id="last">
+            請親自跟老婆提交成績<br />
+            答對一題親一下<br />
+            答錯一題咬一下<br />
+            全對.........嘻嘻嘻
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+body{
+    font-size:16px;
+    text-align:center;
+    background-color:#003E3E;
+}
+/* 大標 */
+.btitle{
+    font-size:3em;
+    font-family:"Comic Sans MS"," Microsoft JhengHei";
+    margin:50px 0px;
+    letter-spacing:0.2em;
+    font-weight:bold;
+    color:#00AEAE;
+}
+/* 說明文字 */
+.text{
+    font-size:1.3em;
+    font-family:Arial,Verdana;
+    margin-bottom:80px;
+    color:#AE8F00;
+}
+.col{
+    display:flex;
+    justify-content:center;
+}
+.incol{
+    width:400px;height:270px;
+    margin-bottom:80px;
+    padding:30px;
+    background-color:#cef;
+    border-radius:3px;
+}
+/* col內的標題 */
+.title{
+    font-size:1.25em;
+    font-family:"Comic Sans MS"," Microsoft JhengHei";
+    font-weight:bold;
+}
+/* col內的選項*/
+.item{
+    border:2px solid #037;
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:20px;
+}
+.item:hover{
+    background-color:#888;
+    color:white;
+}
+/*.last{
+    color:#AE8F00;
+    font-size:2em;
+}*/
+/* 第二題 */
+.e{
+    display:none;
+}
+/* thank you */
+.last{
+    display:none;
+    font-family:"Comic Sans MS"," Microsoft JhengHei";
+    font-size:1.5em;
+    color:#AE8F00;
+}
+@media(max-width:700px){
+    .btitle{
+        font-size:2em;
+    }
+    .text{
+        font-size:1em;
+        margin-bottom:60px;
+    }
+}
+@media(max-width:530px){
+    .btitle{
+        font-size:1.7em;
+    }
+    .text{
+        font-size:0.9em;
+        margin-bottom:50px;
+    }
+    .incol{
+        width:70%;
+    }
+    .title{
+        font-size:1.3em;
+    }
+    .last{
+        font-size:3em;
+    }
+}
+@media(max-width:450px){
+    .text{
+        font-size:0.7em;
+        margin-bottom:40px;
+    }
+    .title{
+        font-size:1.1em;
+    }
+    .incol{
+        height:310px;
+    }
+    .last{
+        font-size:1em;
+        color:#AE8F00;
+    }
+}
+@media(max-width:390px){
+    .title{
+        font-size:1em;
+    }
+    .incol{
+        height:250px;
+    }
+    .item{
+        font-size:15px;
+    }
+    .incol{
+        height:310px;
+    }
+    .last{
+        font-size:1em;
+        color:#AE8F00;
+    }
+}
